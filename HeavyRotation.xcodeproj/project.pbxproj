@@ -13,6 +13,9 @@
 		EF35CBBC163F1E94002243AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF35CBBA163F1E94002243AA /* InfoPlist.strings */; };
 		EF35CBBE163F1E94002243AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF35CBBD163F1E94002243AA /* main.m */; };
 		EF35CBC2163F1E94002243AA /* RotationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF35CBC1163F1E94002243AA /* RotationAppDelegate.m */; };
+		EF35CBCB163F21D4002243AA /* HeavyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF35CBC9163F21D4002243AA /* HeavyViewController.m */; };
+		EF35CBCC163F21D4002243AA /* HeavyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF35CBCA163F21D4002243AA /* HeavyViewController.xib */; };
+		EF35CBCE163F2319002243AA /* joeeye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF35CBCD163F2319002243AA /* joeeye.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		EF35CBBF163F1E94002243AA /* HeavyRotation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeavyRotation-Prefix.pch"; sourceTree = "<group>"; };
 		EF35CBC0163F1E94002243AA /* RotationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotationAppDelegate.h; sourceTree = "<group>"; };
 		EF35CBC1163F1E94002243AA /* RotationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationAppDelegate.m; sourceTree = "<group>"; };
+		EF35CBC8163F21D4002243AA /* HeavyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeavyViewController.h; sourceTree = "<group>"; };
+		EF35CBC9163F21D4002243AA /* HeavyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeavyViewController.m; sourceTree = "<group>"; };
+		EF35CBCA163F21D4002243AA /* HeavyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeavyViewController.xib; sourceTree = "<group>"; };
+		EF35CBCD163F2319002243AA /* joeeye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = joeeye.jpg; path = ../joeeye.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +79,12 @@
 		EF35CBB7163F1E94002243AA /* HeavyRotation */ = {
 			isa = PBXGroup;
 			children = (
+				EF35CBCD163F2319002243AA /* joeeye.jpg */,
 				EF35CBC0163F1E94002243AA /* RotationAppDelegate.h */,
 				EF35CBC1163F1E94002243AA /* RotationAppDelegate.m */,
+				EF35CBC8163F21D4002243AA /* HeavyViewController.h */,
+				EF35CBC9163F21D4002243AA /* HeavyViewController.m */,
+				EF35CBCA163F21D4002243AA /* HeavyViewController.xib */,
 				EF35CBB8163F1E94002243AA /* Supporting Files */,
 			);
 			path = HeavyRotation;
@@ -143,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF35CBBC163F1E94002243AA /* InfoPlist.strings in Resources */,
+				EF35CBCC163F21D4002243AA /* HeavyViewController.xib in Resources */,
+				EF35CBCE163F2319002243AA /* joeeye.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +168,7 @@
 			files = (
 				EF35CBBE163F1E94002243AA /* main.m in Sources */,
 				EF35CBC2163F1E94002243AA /* RotationAppDelegate.m in Sources */,
+				EF35CBCB163F21D4002243AA /* HeavyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +241,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeavyRotation/HeavyRotation-Prefix.pch";
 				INFOPLIST_FILE = "HeavyRotation/HeavyRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -238,7 +254,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeavyRotation/HeavyRotation-Prefix.pch";
 				INFOPLIST_FILE = "HeavyRotation/HeavyRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
