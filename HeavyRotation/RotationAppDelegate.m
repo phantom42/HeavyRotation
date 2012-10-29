@@ -14,9 +14,32 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // get the device object
+    // UIDevice contains information about the physical device
+    UIDevice *device = [UIDevice currentDevice] ;
+    
+    // tell it to start monitoring the accelerometer for orientation changes
+    [device beginGeneratingDeviceOrientationNotifications] ;
+    
+    // get the notification center for the app
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter] ;
+    
+    // add yourself as an observer
+    [nc addObserver:self
+           selector:@selector(orientationChanged:)
+               name:UIDeviceOrientationDidChangeNotification
+             object:device] ;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)orientationChanged:(NSNotification *)note
+{
+    // log the constant that represents the current orientation
+    NSLog(@"orientationChanged: %d", [[note object] orientation]) ;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
