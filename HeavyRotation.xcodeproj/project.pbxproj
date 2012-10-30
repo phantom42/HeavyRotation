@@ -280,6 +280,7 @@
 				EF35CBC7163F1E94002243AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
