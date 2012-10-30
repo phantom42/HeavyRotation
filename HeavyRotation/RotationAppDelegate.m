@@ -11,6 +11,8 @@
 
 @implementation RotationAppDelegate
 
+@synthesize hvc ;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -31,11 +33,23 @@
            selector:@selector(orientationChanged:)
                name:UIDeviceOrientationDidChangeNotification
              object:device] ;
+     
     
-    HeavyViewController *hvc = [[HeavyViewController alloc] init] ;
+    // enable proximity monitoring
+    [device setProximityMonitoringEnabled:YES] ;
+    
+    // add a new notification setup
+    [nc addObserver:self
+           selector:@selector(proximityChanged:)
+               name:UIDeviceProximityStateDidChangeNotification
+             object:device] ;
+    
+    hvc = [[HeavyViewController alloc] init] ;
     [[self window] setRootViewController:hvc] ;
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor blueColor] ;
+    [[hvc view] setBackgroundColor:[UIColor whiteColor]] ;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -44,6 +58,16 @@
 {
     // log the constant that represents the current orientation
     NSLog(@"orientationChanged: %d", [[note object] orientation]) ;
+}
+
+- (void)proximityChanged:(NSNotification *)note
+{
+    NSLog(@"proximityChanged: %d", [[note object] proximityState]) ;
+    
+    if ([[note object] proximityState])
+    {
+        [[hvc view] setBackgroundColor:[UIColor darkGrayColor]] ;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

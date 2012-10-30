@@ -16,6 +16,7 @@
 		EF35CBCB163F21D4002243AA /* HeavyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF35CBC9163F21D4002243AA /* HeavyViewController.m */; };
 		EF35CBCC163F21D4002243AA /* HeavyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF35CBCA163F21D4002243AA /* HeavyViewController.xib */; };
 		EF35CBCE163F2319002243AA /* joeeye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF35CBCD163F2319002243AA /* joeeye.jpg */; };
+		EFBB5B031640303D0053E3F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBB5B021640303D0053E3F7 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		EF35CBC9163F21D4002243AA /* HeavyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeavyViewController.m; sourceTree = "<group>"; };
 		EF35CBCA163F21D4002243AA /* HeavyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeavyViewController.xib; sourceTree = "<group>"; };
 		EF35CBCD163F2319002243AA /* joeeye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = joeeye.jpg; path = ../joeeye.jpg; sourceTree = "<group>"; };
+		EFBB5B021640303D0053E3F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		EF35CBA2163F1E94002243AA = {
 			isa = PBXGroup;
 			children = (
+				EFBB5B021640303D0053E3F7 /* Default-568h@2x.png */,
 				EF35CBB7163F1E94002243AA /* HeavyRotation */,
 				EF35CBB0163F1E94002243AA /* Frameworks */,
 				EF35CBAE163F1E94002243AA /* Products */,
@@ -156,6 +159,7 @@
 				EF35CBBC163F1E94002243AA /* InfoPlist.strings in Resources */,
 				EF35CBCC163F21D4002243AA /* HeavyViewController.xib in Resources */,
 				EF35CBCE163F2319002243AA /* joeeye.jpg in Resources */,
+				EFBB5B031640303D0053E3F7 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
