@@ -19,5 +19,12 @@
     return (x == UIInterfaceOrientationPortrait)
         || UIInterfaceOrientationIsLandscape(x) ;
 }
+- (void)viewDidLoad
+{
+    [image setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight] ;
+    [slider setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin] ;
+    [button1 setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin] ;
+    [button2 setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin] ;
+}
 
 @end

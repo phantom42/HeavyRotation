@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HeavyViewController : UIViewController
+{
+    __weak IBOutlet UIImageView *image ;
+    __weak IBOutlet UISlider *slider ;
+    __weak IBOutlet UIButton *button1 ;
+    __weak IBOutlet UIButton *button2 ;
+}
 
 @end
