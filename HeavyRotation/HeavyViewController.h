@@ -14,6 +14,7 @@
     __weak IBOutlet UISlider *slider ;
     __weak IBOutlet UIButton *button1 ;
     __weak IBOutlet UIButton *button2 ;
+    __weak IBOutlet UIButton *magicButton ;
 }
 
 @end
